@@ -1,7 +1,8 @@
-# Unified AI: Creating Namespace Notebook
+# Unified AI
 
+## Creating Namespace Notebook
 
-1. Set the namespace name
+1. Set your namespace name
 Name: 
 intro-to-dlNN-8cpu64gb
 
@@ -23,3 +24,8 @@ RAM: 64 GiB
 scratch-volume 
 
 5. Launch the notebook
+
+
+## Illustration of the setup 
+
+![drawing.svg](drawing.svg)
