@@ -9,13 +9,12 @@ docker pull ghcr.io/ucl-arc-unified-ai/kubeflow-notebook-images-pytorch-default:
 * Build Dockerfile container
 ```bash
 IMAGENAME=intro2dl-uai
-VERSION_ID=v0.1.0
+VERSION_ID=v0.1.1
 docker build --network=host -t ${IMAGENAME}:${VERSION_ID} -f Dockerfile .
 ```
 
-
 * check python version and dependencies
-```
+```bash
 docker run --rm \
   -e MASTER_ADDR=localhost \
   -e MASTER_PORT=12355 \
@@ -41,8 +40,14 @@ print("tensorboard:", tensorboard.__version__)
 import seaborn as sns
 print("seaborn:", sns.__version__)
 
+import sklearn
+print("sklearn:", sklearn.__version__)
+
 import keras_tuner
 print("keras_tuner:", keras_tuner.__version__)
+
+import pydot
+print("pydot:", pydot.__version__)
 PY
   '
 ```
@@ -71,8 +76,8 @@ docker tag ${IMAGENAME}:${VERSION_ID} ghcr.io/${GITHUB_ORG}/${PROJECT_NAME}/${IM
 ```bash
 $ docker images
 REPOSITORY                                                            TAG       IMAGE ID       CREATED              SIZE
-intro2dl-uai                                                          v0.1.0    8c878d9c78eb   8 minutes ago    10.6GB
-ghcr.io/mxochicale/carpentries/intro2dl-uai                           v0.1.0    8c878d9c78eb   8 minutes ago    10.6GB
+intro2dl-uai                                                          v0.1.1    eadf82b19448   2 minutes ago       10.6GB
+ghcr.io/mxochicale/carpentries/intro2dl-uai                           v0.1.1    eadf82b19448   2 minutes ago       10.6GB
 ghcr.io/ucl-arc-unified-ai/kubeflow-notebook-images-pytorch-default   v1.0.20   cb6ac0ec3c25   3 weeks ago          8.41GB
 ```
 

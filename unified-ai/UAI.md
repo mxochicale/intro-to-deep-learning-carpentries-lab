@@ -8,7 +8,7 @@ intro-to-dlNN-8cpu64gb
 2. Configure the custom notebook
 
 Image: 
-ghcr.io/mxochicale/carpentries/intro2dl-uai:v0.1.0
+ghcr.io/mxochicale/carpentries/intro2dl-uai:v0.1.1
 
 Image pull policy: Always
 

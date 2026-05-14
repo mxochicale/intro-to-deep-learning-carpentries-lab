@@ -13,5 +13,5 @@ RUN /opt/conda/bin/python -m pip install --no-cache-dir \
     tensorflow \
     tensorboard \
     seaborn \
-    keras-tuner
-
+    keras-tuner \
+    pydot

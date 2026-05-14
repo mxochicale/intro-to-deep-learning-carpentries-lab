@@ -1,11 +1,6 @@
 .venv
-
-## .ipynb_checkpoints/
 **/.ipynb_checkpoints
-
-## ignore training checkpoints
+**/model.png
 **/*.pth
-
-## ignores vim temporal files
 **/*.swp
 
